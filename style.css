@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background: #050505;
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+#ambient {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(20,20,20,0.3), #000);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.chapter {
+  position: relative;
+  min-height: 100vh;
+  padding: 12vh 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.chapter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.content {
+  position: relative;
+  max-width: 800px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.chapter.visible .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero {
+  background-image: url("");
+}
+
+.chapter:nth-child(2) {
+  background-image: url("/inicio.jpg");
+}
+
+.chapter:nth-child(3) {
+  background-image: url("/despertar.jpg");
+}
+
+.chapter:nth-child(4) {
+  background-image: url("/primeiras-culturas.jpg");
+}
+
+.territory {
+  background-image: url("");
+}
+
+.ecosystem {
+  background-image: url("");
+}
+
+.faith {
+  background-image: url("/deuses.jpg");
+}
+
+.conflict {
+  background-image: url("/governoDoPensamento.jpg");
+}
+
+.governance {
+  background-image: url("/fim.jpg");
+}
+
+.end {
+  background: #000;
+}
+
+h1, h2 {
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.final {
+  font-size: 1.4rem;
+  letter-spacing: 0.2em;
+}
