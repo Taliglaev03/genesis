@@ -58,15 +58,15 @@ body {
 }
 
 .chapter:nth-child(2) {
-  background-image: url("/inicio.jpg");
+  background-image: url("inicio.jpg");
 }
 
 .chapter:nth-child(3) {
-  background-image: url("/despertar.jpg");
+  background-image: url("despertar.jpg");
 }
 
 .chapter:nth-child(4) {
-  background-image: url("/primeiras-culturas.jpg");
+  background-image: url("primeiras-culturas.jpg");
 }
 
 .territory {
@@ -78,15 +78,15 @@ body {
 }
 
 .faith {
-  background-image: url("/deuses.jpg");
+  background-image: url("deuses.jpg");
 }
 
 .conflict {
-  background-image: url("/governoDoPensamento.jpg");
+  background-image: url("governoDoPensamento.jpg");
 }
 
 .governance {
-  background-image: url("/fim.jpg");
+  background-image: url("fim.jpg");
 }
 
 .end {
